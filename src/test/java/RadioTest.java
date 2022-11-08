@@ -45,6 +45,7 @@ public class RadioTest {
         Radio switcher = new Radio();
         switcher.setNextRadioStation(9);
 
+
         switcher.next();
 
         int actual = 0;
@@ -569,7 +570,7 @@ public class RadioTest {
     @Test
     public void shouldIncreaseVolumeOnOneInRange() {
 
-        Radio switcher = new Radio();
+        Radio switcher = new Radio(100);
         switcher.setIncreaseRadioVolume(15);
 
         switcher.increaseVolume();
